@@ -79,6 +79,11 @@ fn main() {
 
     let min_char: char = char::MIN;
     let max_char: char = char::MAX;
+
+    // Overflow
+    let mut u: u32 = u32::MAX;
+    u += 1;
+    println!("overflow u32: {}", u); // Added 'u' inside the println! macro for correct output
 }
 ```
 
@@ -113,6 +118,8 @@ fn main() {
 
     Method: 2 (With # which prints struct elements on separate line)
     println!("{:#?}", lang_struct);
+
+}
 
 ```
 
