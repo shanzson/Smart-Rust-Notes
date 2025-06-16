@@ -1,4 +1,5 @@
-# Rust programming Notes
+# Rust programming Notes 
+### (Courtesy: Smart Contract Programmer YT Channel)
 
 ## Main function
 ```
@@ -125,7 +126,23 @@ fn main() {
     println!("{:#?}", lang_struct);
 
 }
+```
 
+## Tuples
+
+```
+    // Tuple
+    let t: (bool, u32, char) = (true, 1, 'c');
+
+    // Destructure
+    let (a, b, c) = t;
+
+    // ignore with _
+    let (_, b, _) = t;
+
+    // Empty tuple - unit type
+    let t = ();
+}
 ```
 
 
