@@ -1,4 +1,4 @@
-# Rust Notes for Noobs 
+# Rust Notes 
 ### (Courtesy: Smart Contract Programmer YT Channel)
 
 ## Main function
