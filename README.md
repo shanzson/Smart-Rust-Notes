@@ -53,8 +53,8 @@ fn main() {
         version: String,
     }
 
-    Method: 1 (Without #)
 
+    Method: 1 (Without #)
     let lang_struct = Lang {
         language: String::from("Rust"),
         version: String::from("1.8.3"),
@@ -62,8 +62,8 @@ fn main() {
 
     println!("{:?}", lang_struct);
 
-    Method: 2 (With # which prints struct elements on separate line)
 
+    Method: 2 (With # which prints struct elements on separate line)
     println!("{:#?}", lang_struct);
 
 ```
