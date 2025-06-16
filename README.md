@@ -64,6 +64,22 @@ fn main() {
 
     // Characters
     let c: char = 'c';
+
+    // Type conversion
+    let i: i32 = 1;
+    let u: u32 = i as u32;
+    let x: u32 = u + (i as u32);
+
+    // Min and max
+    let min_i: i32 = i32::MIN;
+    let max_i: i32 = i32::MAX;
+
+    println!("i32 min: {min_i}");
+    println!("i32 max: {max_i}");
+
+    let min_char: char = char::MIN;
+    let max_char: char = char::MAX;
+}
 ```
 
 ## Printing
