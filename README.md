@@ -41,7 +41,9 @@ fn main() {
 
 //  Printing string
     let lang = "rust";
+
     println!("hello {}", lang);
+
     println!("hello {lang}");
 
 //  Printing struct
@@ -52,13 +54,16 @@ fn main() {
     }
 
     Method: 1 (Without #)
+
     let lang_struct = Lang {
         language: String::from("Rust"),
         version: String::from("1.8.3"),
     };
+
     println!("{:?}", lang_struct);
 
     Method: 2 (With # which prints struct elements on separate line)
+
     println!("{:#?}", lang_struct);
 
 ```
