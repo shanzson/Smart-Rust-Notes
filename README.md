@@ -4,8 +4,8 @@
 
 ```
 // Printing variables
-let x = 2;
-println!("{} * {} = {}", x, x, x * x);
+    let x = 2;
+    println!("{} * {} = {}", x, x, x * x);
 
 // Printing string
     let lang = "rust";
@@ -13,10 +13,11 @@ println!("{} * {} = {}", x, x, x * x);
     println!("hello {lang}");
 
 // Printing struct
-struct Lang {
-    language: String,
-    version: String,
-}
+    #[derive(Debug)]
+    struct Lang {
+        language: String,
+        version: String,
+    }
 
 
 
