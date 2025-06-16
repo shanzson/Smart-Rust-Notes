@@ -74,9 +74,6 @@ fn main() {
     let min_i: i32 = i32::MIN;
     let max_i: i32 = i32::MAX;
 
-    println!("i32 min: {min_i}");
-    println!("i32 max: {max_i}");
-
     let min_char: char = char::MIN;
     let max_char: char = char::MAX;
 
@@ -84,6 +81,14 @@ fn main() {
     let mut u: u32 = u32::MAX;
     u += 1;
     println!("overflow u32: {}", u); // Added 'u' inside the println! macro for correct output
+
+    // checked_add checks for overflows while adding
+    let u = u32::checked_add(u32::MAX, 1);
+
+    // wrapping_add allows overflow via wrapping while adding
+    let u = u32::wrapping_add(u32::MAX, 1);
+
+}
 }
 ```
 
