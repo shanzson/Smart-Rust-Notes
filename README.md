@@ -153,4 +153,29 @@ fn main() {
 
 ```
 
+## Array
+
+```
+    // Array - fixed length, known at compile time
+    let arr: [u32; 3] = [1, 2, 3];
+    println!("arr[2] = {}", arr[2]);
+
+    // Mutable array
+    let mut arr: [u32; 3] = [1, 2, 3];
+    arr[1] = 9;
+
+    // Print array of same elements
+    let arr: [u32; 10] = [0; 10];
+    println!("{:?}", arr);
+    
+    // Slice - length not known at compile time
+    let nums: [i32; 10] = [-1, 1, -2, 2, -3, 3, -4, 4, -5, 5];
+    
+    // First 3 elements
+    let s = &nums[..3]; // 0, 1, 2
+    println!("first 3 elements: {:?}", s);
+
+```
+
+
 
