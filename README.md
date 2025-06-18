@@ -198,7 +198,6 @@ fn main() {
     let msg: String = String::from("Hello Rust 🦀");
     let s: &str = &msg[0..5];
     let len: usize = s.len();
-}
 ```
 
 
