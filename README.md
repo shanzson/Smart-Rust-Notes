@@ -216,6 +216,12 @@ fn main() {
     msg += "!";
     println!("{msg}");
 
+    // String interpolation - format!
+    let lang = "Rust";
+    let emoji = "🦀";
+    let msg: String = format!("Hello {} {}", lang, emoji);
+    println!("{msg}");
+
 
 ```
 
