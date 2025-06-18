@@ -1,4 +1,4 @@
-# Smart Rust Notes 
+<img width="860" alt="image" src="https://github.com/user-attachments/assets/21f7ca21-bea0-4917-b414-2a4a952b8a88" /># Smart Rust Notes 
 ### (Courtesy: Smart Contract Programmer YT Channel)
 
 ## Main function
@@ -175,6 +175,32 @@ fn main() {
     let s = &nums[..3]; // 0, 1, 2
     println!("first 3 elements: {:?}", s);
 
+```
+## String and &str
+
+```
+    // String = vector of u8 (Vec<u8>) valid UTF-8
+    // &str = slice of u8 (&[u8]) valid UTF-8
+
+    // When to use String vs &str
+    // String -> mutate or data needs to be owned
+    // &str -> read only
+
+    // String
+    let msg: String = String::from("Hello Rust 🦀");
+    let len: usize = msg.len();
+
+    // str - string slice
+    // &str
+    // - usually used str with reference (borrowed)
+    // - immutable
+
+    let msg: String = String::from("Hello Rust 🦀");
+    let s: &str = &msg[0..5];
+    let len: usize = s.len();
+    println!("slice: {s}");
+    println!("len: {len}");
+}
 ```
 
 
