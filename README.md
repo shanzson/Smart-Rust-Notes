@@ -1,4 +1,4 @@
-<img width="860" alt="image" src="https://github.com/user-attachments/assets/21f7ca21-bea0-4917-b414-2a4a952b8a88" /># Smart Rust Notes 
+# Smart Rust Notes 
 ### (Courtesy: Smart Contract Programmer YT Channel)
 
 ## Main function
@@ -198,8 +198,6 @@ fn main() {
     let msg: String = String::from("Hello Rust 🦀");
     let s: &str = &msg[0..5];
     let len: usize = s.len();
-    println!("slice: {s}");
-    println!("len: {len}");
 }
 ```
 
