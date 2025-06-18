@@ -213,7 +213,7 @@ fn main() {
 
     // Add &str to String
     let mut msg: String = "Hello Rust".to_string();
-    msg += "!";
+    msg += "!";       // Note that only slices can get added to a string
     println!("{msg}");
 
     // String interpolation - format!
