@@ -223,7 +223,7 @@ fn main() {
     println!("{msg}");
 
     // To convert from slice to string type
-    let &a: &str;
+    let a: &str;
     let mut astr = String::from(a); 
 
 ```
