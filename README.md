@@ -207,7 +207,6 @@ fn main() {
         "d": 3
     }
     "#;
-    println!("{s}");
 
     let msg: String = String::from("Hello Rust 🦀");
     let s: &str = &msg;
