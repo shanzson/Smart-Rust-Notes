@@ -222,6 +222,9 @@ fn main() {
     let msg: String = format!("Hello {} {}", lang, emoji);
     println!("{msg}");
 
+    // To convert from slice to string type
+    let &a: &str;
+    let mut astr = String::from(a); 
 
 ```
 
