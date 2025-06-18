@@ -199,6 +199,7 @@ fn main() {
     let s: &str = &msg[0..5];
     let len: usize = s.len();
 
+    // Multi-line string referral
     let s: &str = r#"
     {
         "a": 1,
