@@ -211,6 +211,12 @@ fn main() {
     let msg: String = String::from("Hello Rust 🦀");
     let s: &str = &msg;
 
+    // Add &str to String
+    let mut msg: String = "Hello Rust".to_string();
+    msg += "!";
+    println!("{msg}");
+
+
 ```
 
 
