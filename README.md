@@ -358,6 +358,14 @@ impl Point {
         self.y = y;
     }
 }
+
+fn main() {
+    let mut p = Point::new(1.0, 1.0);
+    p.move_to(2.0, 0.0);
+
+    let d = p.dist();
+    println!("{}", d);
+}
 ```
 
 
