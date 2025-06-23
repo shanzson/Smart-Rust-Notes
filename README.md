@@ -368,5 +368,72 @@ fn main() {
 }
 ```
 
+## Operators
+```
+-1 / 2 = 0
+-1 % 2 = -1
+
+    // Bit shift
+    // Left shift
+    // When you left shift by n positions, it's equivalent to multiplying by 2^n:
+    6u32 << 3
+    Original (6):  00000000 00000000 00000000 00000110
+                                                 ↑↑
+                                               bits 1,2
+    
+    After << 3:    00000000 00000000 00000000 00110000
+                                          ↑↑
+                                    bits 4,5
+
+    // Right shift
+    // When you right shift by n positions, it's equivalent to dividing by 2^n (integer division)
+    10u32 >> 2
+    Original (10): 00000000 00000000 00000000 00001010
+                                                  ↑ ↑↑
+                                                  │ └┴── bits 0,1 (will be lost)
+                                                  └───── bit 3 (will move to bit 1)
+    
+    After >> 2:    00000000 00000000 00000000 00000010
+                                                    ↑
+                                                    └──── bit 3 moved to bit 1
+
+    let fast_square = x * x;        // Fast
+    let slow_square = x.pow(2);     // Slower
+
+    // Type casting
+    let a: u32 = 1;
+    let b = a as f32;
+    println!("b = {b}");
+
+    // Comparisons
+    let a = 1;
+    let b = 2;
+    let c = a == b;
+    let c = a != b;
+    let c = a <= b;
+    let c = a < b;
+    let c = a >= b;
+    let c = a > b;
+
+    // Boolean
+    let c = true && false;
+    let c = true || false;
+    let c = !true;
+
+    // Bitwise operators
+    // 101
+    let a: u8 = 5;
+    // 011
+    let b: u8 = 3;
+    println!("a & b = {:03b}", a & b);
+    println!("a | b = {:03b}", a | b);
+    println!("a ^ b = {:03b}", a ^ b);
+    println!("!a = {:03b}", !a);
+    println!("1 << 3 = {}", 1u32 << 3);
+    // 10 >> 2 = 1010 >> 2 = 10
+    println!("10 >> 2 = {}", 10u32 >> 2);
+    
+```
+
 
 
