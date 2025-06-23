@@ -345,6 +345,10 @@ impl Point {
     }
 
     // Methods
+    fn move_to(&mut self, x: f32, y: f32) {
+        self.x = x; 
+        self.y = y; 
+    }
     fn dist(&self) -> f32 {
         (self.x * self.x + self.y * self.y).sqrt()
     }
