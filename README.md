@@ -432,8 +432,26 @@ fn main() {
     println!("1 << 3 = {}", 1u32 << 3);
     // 10 >> 2 = 1010 >> 2 = 10
     println!("10 >> 2 = {}", 10u32 >> 2);
+
     
 ```
+## If-else statement
 
+```
+    if x % 2 == 0 {
+        println!("{x} is even");
+    } else {
+        println!("{x} is odd");
+    }
+
+    // Return from conditional statement
+    let z: i32 = if x > 0 {
+        1
+    } else if x < 0 {
+        -1
+    } else {
+        0
+    };
+```
 
 
