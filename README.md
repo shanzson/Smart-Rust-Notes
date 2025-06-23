@@ -255,6 +255,12 @@ fn main() {
     println!("blue == red ? {}", Color::Blue == Color::Red);
     println!("green == green ? {}", Color::Green == Color::Green);
 
+    // Option is predefined as this
+    enum Option<T> {
+        Some(T),    // Has a value of type T
+        None,       // No value
+    }
+
     // Option<T> = Some(T) | None
     let x: Option<i32> = None;
     let x: Option<i32> = Some(-1);
