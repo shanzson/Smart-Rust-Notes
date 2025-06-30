@@ -599,3 +599,22 @@ fn main() {
     };
     println!("let else {i}")
 ```
+
+## Function
+```
+fn add(x: u32, y: u32) -> u32 {
+    // Implicit return, no semicolon
+    x + y
+}
+
+// No output
+fn print_name(name: String) {
+    println!("My name is {}", name);
+}
+
+// Diverge - never return
+fn forever() -> ! {
+    loop {}
+}
+```
+
